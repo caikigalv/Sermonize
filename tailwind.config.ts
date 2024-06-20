@@ -8,6 +8,15 @@ const config: Config = {
   ],
   theme: {
     extend: {
+
+      fontFamily: {
+        Montserrat: ['Montserrat'],
+        'roboto-medium': ['Roboto-medium', 'sans-serif'],
+        'roboto-bold': ['Roboto-bold', 'sans-serif'],
+        'montserrat-bold': ['Montserrat-bold', 'sans-serif'],
+        'montserrat-medium': ['Montserrat-medium', 'sans-serif'],
+      },
+
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
@@ -16,7 +25,8 @@ const config: Config = {
       backgroundColor: {
         "bgServico": "#D2E4FF",
         "bgColaborador": "#589FE1",
-        "bgFooter": "#126EC3"
+        "bgFooter": "#126EC3",
+        "bgIntroducao": "#F6FBFF"
         
       },
       colors:{
@@ -24,6 +34,8 @@ const config: Config = {
         "BlueDark": "#00043B",
         "BlueDarkMedio":"#003464",
         "BlueMedio":" #126EC3",
+        "BlueLite" : "#D2E4Ff",
+        "BlueUltraLite": '#66B6FF'
         
       },
     },
