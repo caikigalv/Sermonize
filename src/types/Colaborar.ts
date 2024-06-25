@@ -4,5 +4,4 @@ export type Colaborar ={
     name:string,
     skils:string
     
-
 }

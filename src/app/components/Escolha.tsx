@@ -8,7 +8,7 @@ const Escolha = () => {
         <h2 className='container pl-10 m-auto drop-shadow text-4xl text-BlueMedio font-Montserrat font-bold'>POR QUE NOS <span className='text-BlueDark'>ESCOLHER?</span></h2>
         </div >
         <div className=' bg-bgColaborador'>
-        <ul className='mt-5 bg-bgColaborador flex max-w-7xl mt-[60px] gap-[76px] m-auto text-center'>
+        <ul className=' bg-bgColaborador xl:flex flex max-md:flex-col max-md:justify-center max-md:items-center  max-w-7xl mt-[60px] gap-[76px] m-auto text-center'>
         {EscolhaItems.map((item) => (    
             <li key={item.id} className='drop-shadow first:mt-8 tracking-tight '>
                 <h1 className='max-w-[200px] m-auto font-Montserrat text-BlueDark text-[24px] font-bold'>{item.title}</h1>
@@ -17,7 +17,7 @@ const Escolha = () => {
         ))}
     </ul>
     <div className='max-w-7xl m-auto mt-2 mb-10 bg-bgColaborador'>
-    <img src="decoracao.svg" className='drop-shadow' alt="" />
+    <img src="decoracao.svg" className='drop-shadow flex max-md:hidden' alt="" />
     </div>
     </div>
     </div>

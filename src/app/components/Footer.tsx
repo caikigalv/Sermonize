@@ -1,9 +1,9 @@
 export const Footer = () => {
     return (
-        <div className="w-screen bg-bgFooter h-[171px] ">
-            <div className="container mx-auto w-screen flex justify-around items-center h-full">
-                <div>
-                    <div className="flex gap-4">
+        <div className="w-screen  bg-bgFooter xl:h-[171px] h-[200px]">
+            <div className="container mx-auto w-screen xl:flex justify-around items-center h-full">
+                <div className="pt-4">
+                    <div className="flex gap-4 justify-center">
                         <a href="" className="border-b-2 text-[16px]">Sobre-nós</a>
                         <a href="" className="border-b-2 text-[16px]">Formulário</a>
                     </div>
@@ -13,10 +13,10 @@ export const Footer = () => {
                     </div>
                 </div>
 
-                <div><p className="font-bold text-xl">Developed by Sermonize © </p></div>
+                <div><p className="font-bold text-xl flex justify-center pt-4">Developed by Sermonize © </p></div>
 
-                <div className="flex flex-col gap-2">
-                    <div className="flex gap-2  items-center">
+                <div className="flex flex-col gap-2 pt-4">
+                    <div className="flex justify-center gap-2  items-center">
                         <img className="h-[32px]" src="phone.png" alt="" />
                         <p className="text-xl">+55 (64) 99211-5732</p>
                     </div>
