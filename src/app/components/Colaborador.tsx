@@ -50,7 +50,7 @@ export const Colaborador = () => {
                                 custom={index}
                                 >
                                 {item.id === 3 || item.id === 7 ?
-                                <img className='flex rounded-full ml-4 md:ml-0  h-[120px] xl:h-[200px]  mt-4 xl:mt-[140px]'src={item.img} alt="" />
+                                <img className='flex rounded-full ml-4 md:ml-0  max-md:h-[120px] xl:h-[200px]  mt-4 xl:mt-[140px]'src={item.img} alt="" />
                                     :
                                 <img className=" flex rounded-full ml-4 md:ml-0 max-sm:h-[120px] mt-4 " src={item.img} alt="" />
                                 }
