@@ -7,16 +7,16 @@ const Header: React.FC = () => {
 
   const [openMenu, setOpenMenu] = useState(false);
   return (
-    <div className='bg-bgFooter relative'>
+    <div className='bg-bgFooter relative z-[1000]'>
       <div className="h-20 bg-bgFooter justify-between xl:flex place-items-center max-w-screen-2xl m-auto">
         <div className='flex justify-between items-center'>
-          <img className="ml-28" src="LogoSermonize.svg" alt="Logo Sermonize" />
+          <img className="md:ml-28 ml-2" src="LogoSermonize.svg" alt="Logo Sermonize" />
           <TiThMenu onClick={() => setOpenMenu(!openMenu)} className='text-4xl mr-4 xl:hidden' />
         </div>
 
-        <ul className={`xl:inline-flex  bg-bgFooter gap-5 mr-28 text-xl font-roboto-medium items-center drop-shadow-md ${openMenu ? 'top-15 opacity-100  w-screen text-right z-[1000] pl-4' : ' hidden '} md:opacity-100 opacity-0`}>
+        <ul className={`xl:inline-flex bg-bgFooter p-1 flex flex-col gap-4  md:gap-8 mr-28 text-xl font-roboto-medium md:items-center drop-shadow-md  ${openMenu ? 'top-15 opacity-100 w-screen text-right py-4 z-[1000] pl-4' : ' hidden'} md:opacity-100 opacity-0`}>
           {headerItems.map(item => (
-            <li key={item.id}>
+            <li key={item.id} className={`${item.text !== 'Área Do Cliente'? 'md:hover:border-b-white md:hover:border-b-2 cursor-pointer': 'md:border-none'}`}>
               {item.text !== 'Área Do Cliente' ? (
                 item.text
               ) : (

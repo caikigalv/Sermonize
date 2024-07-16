@@ -37,7 +37,7 @@ export const Colaborador = () => {
 
                 <div className="w-screen xl:h-[350px] xl:flex justify-center  items-center">
                     {colaboradores.map((item, index )=> (
-                        <>
+                        <div key={item.id}>
                             <div className={` flex justify-center  ${item.id %2 === 0 ? 'hidden xl:flex' : 'flex'}`}>
                                 <motion.div
                                 key={index}
@@ -60,7 +60,7 @@ export const Colaborador = () => {
                                 </div>
                                 </motion.div>
                             </div>
-                        </>
+                        </div>
                     ))}
                 </div>
             </div>

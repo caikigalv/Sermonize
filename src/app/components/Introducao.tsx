@@ -10,8 +10,8 @@ const Introducao = () => {
                 <h2 className='xl:text-5xl text-3xl text-BlueUltraLite montserrat-bold font-bold' >{item.title2}</h2>
                 <p className='text-BlueDarkMedio w-5/5 max-md:m-4 xl:w-3/5 mt-3 xl:text-[16px] flex justify-center'>{item.text}</p>
               </div>
-                <div>
-                    <img className='xl:max-w-96 xl:mt-20 xl:mb-14 drop-shadow  ' src={item.img} alt="caricatura da introdução" />
+                <div className='max-sm:w-screen flex justify-center'>
+                    <img className=' w-[320px] xl:max-w-96 xl:mt-20 xl:mb-14 drop-shadow  ' src={item.img} alt="caricatura da introdução" />
                 </div>
             </div>
         ))}

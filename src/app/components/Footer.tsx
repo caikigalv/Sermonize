@@ -18,11 +18,11 @@ export const Footer = () => {
                 <div className="flex flex-col gap-2 pt-4">
                     <div className="flex justify-center gap-2  items-center">
                         <img className="h-[32px]" src="phone.png" alt="" />
-                        <p className="text-xl">+55 (64) 99211-5732</p>
+                        <p className="md:text-xl">+55 (64) 99211-5732</p>
                     </div>
                     <div className="flex justify-center items-center gap-2">
                         <img className="h-[16px]" src="mail_icon.png" alt="" />
-                        <p className="text-xl">sermonizetech@gmail.com</p>
+                        <p className="md:text-xl">sermonizetech@gmail.com</p>
                     </div>
                 </div>
 
